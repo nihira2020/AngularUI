@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Welcome to {{result.name}} - {{result.type}}</h1>
+<div mat-dialog-content>
+  <p>What's your Tech?</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Favorite Tech</mat-label>
+    <input matInput >
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary" >OK</button>
+  <button mat-raised-button color="warn" [mat-dialog-close]="closemessage" >Clopse</button>
+  <button mat-raised-button color="warn" (click)="Closepopup()" >Close</button>
+</div>
